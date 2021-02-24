@@ -1,11 +1,11 @@
 import { useContext, useEffect, useState } from "react";
-import { ChallengesContexts } from "../contexts/ChallengeContext";
+import { ChallengesContext } from "../contexts/ChallengeContext";
 import styles from "../styles/components/CountDown.module.css";
 
 let countdownTimeout: NodeJS.Timeout;
 
 export default function Countdown() {
-  const { startNewChallenge } = useContext(ChallengesContexts);
+  const { startNewChallenge, activeChallenge } = useContext(ChallengesContext);
 
   const ms = 0.05;
 
