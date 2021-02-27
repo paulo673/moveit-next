@@ -6,7 +6,6 @@ import {
   useState,
 } from "react";
 import { ChallengesContext } from "./ChallengeContext";
-
 interface CountdownContextData {
   minutes: number;
   seconds: number;
