@@ -24,10 +24,13 @@
     var(--green),
     var(--blue-twitter)
   );
+
+  transition: 1s;
 }
 
 .currentExperience {
   position: absolute;
   top: 12px;
   transform: translateX(-50%);
+  transition: 1s;
 }
